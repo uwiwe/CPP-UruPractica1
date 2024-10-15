@@ -21,6 +21,21 @@ int main(){
         return 0;
     }
 
+    cout << "Cuantos usuarios desea registrar?" << endl;
+    cin >> x;
+    
+    for (int i = 1; i <= x; ++i) {
+        cout << "Usuario numero " << i << endl;
+        cout << "Ingrese el nombre: " << endl;
+        cin >> user.name;
+        cout << "Ingrese la cedula: " << endl;
+        cin >> user.id;
+        cout << "Ingrese el correo electronico: " << endl;
+        cin >> user.email;
+
+        output << user.name << "\t" << user.id << "\t" << user.email << endl;
+    }
+
     output.close();
     return 0;
 }
